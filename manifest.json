@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "LeapFlix",
+  "description": "LeapFlix extenstion skips through the intros of TV shows with just a click.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab","tabs","webRequest",
+    "https://ajax.googleapis.com/","http://*/*", "https://*/*"
+  ],
+  "content_security_policy": "script-src 'self' https://*.googleapis.com https://*.bootstrapcdn.com; object-src 'self'"
+
+}
+
+
